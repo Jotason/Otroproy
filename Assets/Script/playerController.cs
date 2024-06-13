@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -19,6 +20,8 @@ public class playerController : MonoBehaviour
     public bool isGround;
 
     public Transform foot;
+    public Transform foot1;
+    public Transform foot2;
     public LayerMask groundMask;
 
     public GameObject oDeadPlayer;
@@ -45,8 +48,10 @@ public class playerController : MonoBehaviour
         axisHorizontal = Input.GetAxis("Horizontal");
 
         Debug.DrawRay(foot.position, Vector2.down * distanceGround, Color.red);
+        Debug.DrawRay(foot1.position, Vector2.down * distanceGround, Color.red);
+        Debug.DrawRay(foot2.position, Vector2.down * distanceGround, Color.red);
 
-        if (Physics2D.Raycast(foot.position, Vector2.down, distanceGround, groundMask))
+        if (Physics2D.Raycast(foot.position, Vector2.down, distanceGround, groundMask) || Physics2D.Raycast(foot1.position, Vector2.down, distanceGround, groundMask) || Physics2D.Raycast(foot2.position, Vector2.down, distanceGround, groundMask))
         {
             isGround = true;
         }
