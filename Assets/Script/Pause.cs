@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class playerController : MonoBehaviour
+public class Pause : MonoBehaviour
 {
 
     public GameObject pauseMenu;
@@ -12,12 +12,12 @@ public class playerController : MonoBehaviour
 
 
     void Start() {
-        pauseMenu.SetAction(false);    
+        pauseMenu.SetActive(false);    
 
     }
 
     void Update() {
-        if(input.GetKeyDown(KeyCode.Escape)){
+        if(Input.GetKeyDown(KeyCode.P)){
             if(isPaused)
             {
                 ResumeGame();
@@ -29,7 +29,7 @@ public class playerController : MonoBehaviour
 
     public void PauseGame(){
 
-        pauseMenu.SetAction(true);
+        pauseMenu.SetActive(true);
         Time.timeScale= 0f;
         isPaused = true;
     }
@@ -37,7 +37,7 @@ public class playerController : MonoBehaviour
 
     public void ResumeGame(){
 
-        pauseMenu.SetAction(false);
+        pauseMenu.SetActive(false);
         Time.timeScale= 1f;
         isPaused = false;
     }

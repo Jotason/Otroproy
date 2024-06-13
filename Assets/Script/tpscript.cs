@@ -7,7 +7,7 @@ public class tpscript : MonoBehaviour
 {
 
     public playerController pc;
-    public playerController2 pc2;
+    public playerController pc2;
     public tpobject2script tp;
     // Start is called before the first frame update
     void Start()

@@ -4523,7 +4523,7 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 1557003927}
   axisHorizontal: 0
-  jumpForce: 350
+  jumpForce: 600
   distanceGround: 0.05
   isGround: 0
   foot: {fileID: 1918174915}
@@ -4940,7 +4940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pc: {fileID: 1557003929}
-  pc2: {fileID: 0}
+  pc2: {fileID: 1551884178}
   tp: {fileID: 2110091829}
 --- !u!61 &1592030309
 BoxCollider2D:
