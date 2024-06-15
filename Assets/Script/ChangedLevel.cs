@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class ChangedLevel : MonoBehaviour
 {
-    private void OnTriggetEnter2D(Collider2D collision){
-	
-	if(collision.gameObject.tag == "Player"){
 
-		SceneManager.LoadScene(1);
+	public int sceneChange;
+    private void OnTriggerEnter2D(Collider2D collision){
+	
+	if(collision.tag == "Player"){
+
+			Debug.Log("entro");
+
+		SceneManager.LoadScene(sceneChange);
 
 		}
 
