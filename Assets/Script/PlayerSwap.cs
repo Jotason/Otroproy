@@ -12,6 +12,8 @@ public class PlayerSwap : MonoBehaviour
     public GameObject camara1;
     public GameObject camara2;
 
+    public bool chnYes = false;
+
 
     private CinemachineVirtualCamera cinemachineVirtualCamera;
 
@@ -32,7 +34,7 @@ public class PlayerSwap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && chnYes == true)
         {
             switchPlayer();
         }
