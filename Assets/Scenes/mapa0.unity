@@ -276,8 +276,8 @@ GameObject:
   - component: {fileID: 177732873}
   - component: {fileID: 177732876}
   - component: {fileID: 177732875}
-  - component: {fileID: 177732874}
-  m_Layer: 0
+  - component: {fileID: 177732877}
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,44 +299,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1515788702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!19719996 &177732874
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177732872}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
-  m_UseDelaunayMesh: 0
 --- !u!483693784 &177732875
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -4098,6 +4060,44 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &177732877
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177732872}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 1
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &211413482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4238,7 +4238,7 @@ GameObject:
   - component: {fileID: 256676839}
   - component: {fileID: 256676841}
   - component: {fileID: 256676840}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Saltar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4510,7 +4510,7 @@ GameObject:
   - component: {fileID: 486532887}
   - component: {fileID: 486532889}
   - component: {fileID: 486532888}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Cuidado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5105,7 +5105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 663446100}
   - component: {fileID: 663446099}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: limitecamara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6113,7 +6113,7 @@ GameObject:
   - component: {fileID: 1473362095}
   - component: {fileID: 1473362097}
   - component: {fileID: 1473362096}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Mover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6337,7 +6337,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1515788702}
   - component: {fileID: 1515788701}
-  m_Layer: 0
+  - component: {fileID: 1515788704}
+  m_Layer: 5
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6372,6 +6373,44 @@ Transform:
   - {fileID: 177732873}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1839735485 &1515788704
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515788700}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
 --- !u!1 &1551884171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6577,7 +6616,7 @@ GameObject:
   - component: {fileID: 1554738729}
   - component: {fileID: 1554738731}
   - component: {fileID: 1554738730}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Espera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6712,9 +6751,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1557003925}
   - component: {fileID: 1557003924}
-  - component: {fileID: 1557003928}
   - component: {fileID: 1557003927}
   - component: {fileID: 1557003929}
+  - component: {fileID: 1557003930}
   m_Layer: 0
   m_Name: personaje
   m_TagString: Player
@@ -6822,7 +6861,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1557003928
+--- !u!114 &1557003929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557003923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad70751bf21455b41bc9a3bfc9290a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pc: {fileID: 1557003929}
+  pc2: {fileID: 1551884178}
+  speed: 5
+  rb: {fileID: 1557003927}
+  axisHorizontal: 0
+  jumpForce: 600
+  distanceGround: 0.66
+  isGround: 0
+  foot: {fileID: 1918174915}
+  foot1: {fileID: 2116137692}
+  foot2: {fileID: 1850511018}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 9
+  oDeadPlayer: {fileID: 1052090115}
+  aSDeadPlayer: {fileID: 1052090116}
+--- !u!61 &1557003930
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6868,34 +6935,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1557003929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557003923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad70751bf21455b41bc9a3bfc9290a2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pc: {fileID: 1557003929}
-  pc2: {fileID: 1551884178}
-  speed: 5
-  rb: {fileID: 1557003927}
-  axisHorizontal: 0
-  jumpForce: 600
-  distanceGround: 0.05
-  isGround: 0
-  foot: {fileID: 1918174915}
-  foot1: {fileID: 2116137692}
-  foot2: {fileID: 1850511018}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 9
-  oDeadPlayer: {fileID: 1052090115}
-  aSDeadPlayer: {fileID: 1052090116}
 --- !u!1 &1570913288
 GameObject:
   m_ObjectHideFlags: 0
@@ -7138,7 +7177,7 @@ GameObject:
   - component: {fileID: 1743635885}
   - component: {fileID: 1743635884}
   - component: {fileID: 1743635883}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Texto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
