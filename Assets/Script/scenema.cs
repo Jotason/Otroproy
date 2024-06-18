@@ -17,6 +17,12 @@ public class scenema : MonoBehaviour
         Application.Quit();
     }
 
+    public void Main()
+    {
+
+        SceneManager.LoadScene(0);
+    }
+
     //public void Retor()
     //{ 
     //SceneManager.LoadScene("Interface");

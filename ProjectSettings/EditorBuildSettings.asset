@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/mainmenu.unity
-    guid: b34f14851eb4c4e43a473f3573ecdd0f
+    guid: 635d83d91f3e1eb43b17077edbc0a863
   - enabled: 1
     path: Assets/Scenes/mapa0.unity
     guid: 4b567aac5945b5748968d4369729566d
@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mapa4.unity
     guid: 17ae5d2b2a212d84891e67e8bf4470ec
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: b34f14851eb4c4e43a473f3573ecdd0f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

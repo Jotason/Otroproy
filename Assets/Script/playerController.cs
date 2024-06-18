@@ -14,8 +14,8 @@ public class playerController : MonoBehaviour
     public float axisHorizontal;
     public float jumpForce;
 
-    Vector3 iniPo;
-    Vector3 iniPo2;
+    public Vector3 iniPo;
+    public Vector3 iniPo2;
 
     public float distanceGround;
     public bool isGround;
@@ -87,6 +87,19 @@ public class playerController : MonoBehaviour
         aSDeadPlayer.Play();
     }
 
+
+    public void changePosition(Vector3 vec)
+    {
+        if (pc.enabled == true)
+        {
+            iniPo = vec;
+        }
+        else
+        {
+            iniPo2 = vec;
+        }
+
+    }
 
     private void cambio()
     {
