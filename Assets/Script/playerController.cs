@@ -66,6 +66,11 @@ public class playerController : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce);
         }
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            resetPosition();
+        }
+
     }
 
     private void FixedUpdate()
