@@ -11,10 +11,17 @@ public class PauseScript : MonoBehaviour
     public playerController pc2;
     public GameObject pauseButton;
     public GameObject menuButton;
-    public bool gamePause = false; 
-    // Start is called before the first frame update
-   
+    public bool gamePause = false;
 
+    
+    // Start is called before the first frame update
+
+    void Start()
+    {
+
+
+        
+    }
     // Update is called once per frame
     void Update()
     {

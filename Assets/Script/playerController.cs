@@ -29,6 +29,9 @@ public class playerController : MonoBehaviour
     public AudioSource aSDeadPlayer;
 
 
+    
+
+
 
     private void Awake()
     {
