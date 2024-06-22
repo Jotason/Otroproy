@@ -4038,7 +4038,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5683072, g: 0.67029876, b: 0.9339623, a: 1}
   m_Origin: {x: -12, y: -4, z: 0}
   m_Size: {x: 59, y: 12, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -4390,7 +4390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -258.27838, y: -146.72261}
+  m_AnchoredPosition: {x: -271.43, y: -147.85}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256676840
@@ -5140,7 +5140,7 @@ Transform:
   m_GameObject: {fileID: 528046007}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8673, y: 0.39505565, z: -9.996848}
+  m_LocalPosition: {x: -5.4600525, y: 0.39505565, z: -9.996848}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6154,8 +6154,6 @@ MonoBehaviour:
   pauseButton: {fileID: 937642005}
   menuButton: {fileID: 265113807}
   gamePause: 0
-  music: {fileID: 0}
-  omusic: {fileID: 0}
 --- !u!1 &1459936024
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,7 +6265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272.77472, y: -147.30696}
+  m_AnchoredPosition: {x: -274.55, y: -147.41}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473362096
@@ -7766,7 +7764,7 @@ Transform:
   m_GameObject: {fileID: 1880113252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.914092, y: -0.47879994, z: -9.996848}
+  m_LocalPosition: {x: -10.7718315, y: -0.47879994, z: -9.996848}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

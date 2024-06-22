@@ -12,6 +12,8 @@ public class PlayerSwap : MonoBehaviour
     public GameObject camara1;
     public GameObject camara2;
 
+    public GameObject swap;
+
     public bool chnYes = false;
 
 
@@ -37,6 +39,7 @@ public class PlayerSwap : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && chnYes == true)
         {
             switchPlayer();
+            
         }
 
     }
@@ -65,5 +68,17 @@ public class PlayerSwap : MonoBehaviour
             camara2.SetActive(false);
             playerActive = true;
         }
+
+        StartCoroutine(Test());
+
+        
+    }
+
+    IEnumerator Test() {
+
+        swap.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        Debug.Log("a");
+        swap.SetActive(true);
     }
 }
